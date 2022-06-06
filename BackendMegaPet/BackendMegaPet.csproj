@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Adopter\Controllers" />
+      <Folder Include="Adopter\Domain" />
+      <Folder Include="Adopter\Mapping" />
+      <Folder Include="Adopter\Persistence" />
+      <Folder Include="Adopter\Resources" />
+      <Folder Include="Adopter\Services" />
+      <Folder Include="Pet\Controller" />
+      <Folder Include="Pet\Domain" />
+      <Folder Include="Pet\Mapping" />
+      <Folder Include="Pet\Persistence" />
+      <Folder Include="Pet\Resources" />
+      <Folder Include="Pet\Services" />
+      <Folder Include="Shared\Domain" />
+      <Folder Include="Shared\Exceptions" />
+      <Folder Include="Shared\Extensions" />
+      <Folder Include="Shared\Mapping" />
+      <Folder Include="Shared\Persistence" />
+      <Folder Include="Shared\Resources" />
+      <Folder Include="Shelter\Controller" />
+      <Folder Include="Shelter\Domain" />
+      <Folder Include="Shelter\Mapping" />
+      <Folder Include="Shelter\Persistence" />
+      <Folder Include="Shelter\Resources" />
+      <Folder Include="Shelter\Services" />
+      <Folder Include="User\Controller" />
+      <Folder Include="User\Domain" />
+      <Folder Include="User\Mapping" />
+      <Folder Include="User\Persistence" />
+      <Folder Include="User\Services" />
+    </ItemGroup>
+
+</Project>
