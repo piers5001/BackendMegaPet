@@ -23,7 +23,6 @@
       <Folder Include="Pet\Persistence" />
       <Folder Include="Pet\Resources" />
       <Folder Include="Pet\Services" />
-      <Folder Include="Shared\Domain" />
       <Folder Include="Shared\Exceptions" />
       <Folder Include="Shared\Extensions" />
       <Folder Include="Shared\Mapping" />
@@ -36,7 +35,6 @@
       <Folder Include="Shelter\Resources" />
       <Folder Include="Shelter\Services" />
       <Folder Include="User\Controller" />
-      <Folder Include="User\Domain" />
       <Folder Include="User\Mapping" />
       <Folder Include="User\Persistence" />
       <Folder Include="User\Services" />

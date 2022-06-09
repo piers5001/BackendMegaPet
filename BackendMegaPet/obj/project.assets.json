@@ -215,11 +215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\RiderProjects\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
       "projectName": "BackendMegaPet",
-      "projectPath": "C:\\Users\\User\\RiderProjects\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\RiderProjects\\BackendMegaPet\\BackendMegaPet\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
