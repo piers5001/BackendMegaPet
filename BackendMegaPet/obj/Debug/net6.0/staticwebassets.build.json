@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c/FZmLIoHvxDoBpTggBYXwuSxBpluQbznT/qns5avYs=",
+  "Source": "BackendMegaPet",
+  "BasePath": "_content/BackendMegaPet",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
