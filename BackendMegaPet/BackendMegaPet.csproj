@@ -18,7 +18,6 @@
       <Folder Include="Adopter\Resources" />
       <Folder Include="Adopter\Services" />
       <Folder Include="Pet\Controller" />
-      <Folder Include="Pet\Domain" />
       <Folder Include="Pet\Mapping" />
       <Folder Include="Pet\Persistence" />
       <Folder Include="Pet\Resources" />
