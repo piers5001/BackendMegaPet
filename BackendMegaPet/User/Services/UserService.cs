@@ -42,6 +42,8 @@ public class UserService : IUserService
         if (existingUser == null)
             return new UserResponse("User not found");
 
+        // existingUser.name = user.name;
+        
         try
         {
             _userRepository.Update(existingUser);
@@ -56,8 +58,24 @@ public class UserService : IUserService
         }
     }
 
-    public Task<UserResponse> DeleteAsync(int id)
+    public async Task<UserResponse> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var existingUser = await _userRepository.FindByIdAsync(id);
+
+        if (existingUser == null)
+            return new UserResponse("Category not found");
+
+        try
+        {
+            _userRepository.Remove(existingUser);
+            await _unitOfWork.CompleteAsync();
+
+            return new UserResponse(existingUser);
+        }
+        catch (Exception e)
+        {
+            return new UserResponse($"An error occurred while deleting the user: {e.Message}");
+
+        }
     }
 }

@@ -8,9 +8,10 @@
 
     <ItemGroup>
         <PackageReference Include="AutoMapper" Version="11.0.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.5" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design.Specification.Tests" Version="2.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6" />
         <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
@@ -23,6 +24,7 @@
       <Folder Include="Adopter\Resources" />
       <Folder Include="Adopter\Services" />
       <Folder Include="Pet\Controller" />
+      <Folder Include="Pet\Domain\Models" />
       <Folder Include="Pet\Mapping" />
       <Folder Include="Pet\Persistence" />
       <Folder Include="Pet\Resources" />

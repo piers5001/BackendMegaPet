@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BackendMegaPet.User.Controller;
 
 using BackendMegaPet.User.Domain.Models;
-[Route("/api/v1/[controller]")]
+[Route("api/v1/[controller]")]
 public class UsersController : ControllerBase
 {
     private readonly IUserService _userService;

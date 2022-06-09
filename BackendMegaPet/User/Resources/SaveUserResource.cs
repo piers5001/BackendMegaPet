@@ -13,8 +13,7 @@ public class SaveUserResource
     public string lastName { get; set; }
     
     [Required]
-    [MaxLength(10)]
-    public long phone { get; set; }
+    public int phone { get; set; }
     
     [Required]
     [MaxLength(20)]
@@ -29,6 +28,5 @@ public class SaveUserResource
     public string password { get; set; }
     
     [Required]
-    [MaxLength(10)]
     public int birthday { get; set; }
 }
