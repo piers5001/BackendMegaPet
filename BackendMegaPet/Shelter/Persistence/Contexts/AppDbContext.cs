@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BackendMegaPet.Shelter.Persistence.Contexts;
 using BackendMegaPet.Shelter.Domain.Models;
-
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions options) : base(options)
@@ -11,7 +10,6 @@ public class AppDbContext : DbContext
     }
     
     public DbSet<Shelter> Shelters { get; set; }
-
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
@@ -25,6 +23,8 @@ public class AppDbContext : DbContext
         builder.Entity<Shelter>().Property(p => p.district).IsRequired().HasMaxLength(50);
         builder.Entity<Shelter>().Property(p => p.location).IsRequired().HasMaxLength(50);
         
+
+        base.OnModelCreating(builder);
         
         builder.UseSnakeCaseNamingConvention();
     }

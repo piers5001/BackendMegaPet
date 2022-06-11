@@ -1,15 +1,11 @@
 using BackendMegaPet.Shelter.Domain.Repositories;
 using BackendMegaPet.Shelter.Domain.Services;
 using BackendMegaPet.Shelter.Mapping;
+using BackendMegaPet.Shelter.Persistence.Contexts;
 using BackendMegaPet.Shelter.Persistence.Respositories;
 using BackendMegaPet.Shelter.Services;
 using Microsoft.EntityFrameworkCore;
-using AppDbContext = BackendMegaPet.Shelter.Persistence.Contexts.AppDbContext;
-//using IUnitOfWork = BackendMegaPet.User.Domain.Repositories.IUnitOfWork;
-//using UnitOfWork = BackendMegaPet.User.Persistence.Repositories.UnitOfWork;
 
-using IUnitOfWork = BackendMegaPet.Shelter.Domain.Repositories.IUnitOfWork;
-using UnitOfWork = BackendMegaPet.Shelter.Persistence.Respositories.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
