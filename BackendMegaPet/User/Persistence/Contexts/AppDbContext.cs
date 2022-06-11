@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BackendMegaPet.User.Persistence.Contexts;
 using BackendMegaPet.User.Domain.Models;
+using BackendMegaPet.Shelter.Domain.Models;
 
 public class AppDbContext : DbContext
 {
@@ -11,7 +12,6 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<User> Users { get; set; }
-    //public DbSet<Pet> Pets { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -28,13 +28,6 @@ public class AppDbContext : DbContext
         builder.Entity<User>().Property(p => p.password).IsRequired().HasMaxLength(15);
         builder.Entity<User>().Property(p => p.birthday).IsRequired();
 
-        //builder.Entity<User>()
-        //    .HasMany(p => p.Pets)
-        //    .WithOne(p => p.User)
-        //    .HasForeignKey(p => p.UserId);
-        
-        
-        
-        builder.UseSnakeCaseNamingConvention();
+        base.OnModelCreating(builder);
     }
 }

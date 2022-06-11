@@ -1,23 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj": {}
+
+    "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj": {
+    "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+        "projectUniqueName": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
         "projectName": "BackendMegaPet",
-        "projectPath": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
-        "packagesPath": "C:\\Users\\Propietario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\obj\\",
+        "projectPath": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+        "packagesPath": "C:\\Users\\Ferna\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Propietario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
+          "C:\\Users\\Ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,6 +74,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -90,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

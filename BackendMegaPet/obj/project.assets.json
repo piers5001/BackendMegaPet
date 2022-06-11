@@ -613,7 +613,7 @@
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.2.3": {
+      "Swashbuckle.AspNetCore.Swagger/6.3.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.2.3"
@@ -2701,10 +2701,10 @@
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/6.2.3": {
-      "sha512": "qOF7j1sL0bWm8g/qqHVPCvkO3JlVvUIB8WfC98kSh6BT5y5DAnBNctfac7XR5EZf+eD7/WasvANncTqwZYfmWQ==",
+    "Swashbuckle.AspNetCore.Swagger/6.3.1": {
+      "sha512": "idAFh4xhyJHYHfdLVOOn+BmscBul1OQbWsnL6YPJE8tO/0y6S79hDCvs6OY5VI093/9+1pYY3j31Zet9yaDZjA==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/6.2.3",
+      "path": "swashbuckle.aspnetcore.swagger/6.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2720,7 +2720,7 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
@@ -6131,27 +6131,44 @@
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Relational.Design >= 1.1.6",
       "MySql.EntityFrameworkCore >= 6.0.1",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "Swashbuckle.AspNetCore.Swagger >= 6.3.1"
     ]
   },
   "packageFolders": {
+
     "C:\\Users\\Propietario\\.nuget\\packages\\": {},
+
+    "C:\\Users\\Ferna\\.nuget\\packages\\": {},
+
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+
       "projectUniqueName": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
       "projectName": "BackendMegaPet",
       "projectPath": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
       "packagesPath": "C:\\Users\\Propietario\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\obj\\",
+
+      "projectUniqueName": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "projectName": "BackendMegaPet",
+      "projectPath": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "packagesPath": "C:\\Users\\Ferna\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\obj\\",
+
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+
         "C:\\Users\\Propietario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
+        "C:\\Users\\Ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6204,6 +6221,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
+          },
+          "Swashbuckle.AspNetCore.Swagger": {
+            "target": "Package",
+            "version": "[6.3.1, )"
           }
         },
         "imports": [
@@ -6224,7 +6245,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
