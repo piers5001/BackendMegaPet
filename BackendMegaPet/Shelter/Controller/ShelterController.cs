@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackendMegaPet.Shelter.Controller;
 using BackendMegaPet.Shelter.Domain.Models;
-
 [Route("api/v1/[controller]")]
 public class ShelterController : ControllerBase
 {
@@ -32,17 +31,13 @@ public class ShelterController : ControllerBase
     public async Task<IActionResult> PostAsync([FromBody] SaveShelterResource resource)
     {
         if (!ModelState.IsValid)
-        {
             return BadRequest(ModelState.GetErrorMessages());
-        }
 
         var shelter = _mapper.Map<SaveShelterResource, Shelter>(resource);
         var result = await _shelterService.SaveAsync(shelter);
 
         if (!result.Success)
-        {
             return BadRequest(result.Message);
-        }
 
         var shelterResource = _mapper.Map<Shelter, ShelterResource>(result.Resource);
         
@@ -53,15 +48,14 @@ public class ShelterController : ControllerBase
     public async Task<IActionResult> PutAsync(int id, [FromBody] SaveShelterResource resource)
     {
         if (!ModelState.IsValid)
-        {
             return BadRequest(ModelState.GetErrorMessages());
-        }
+        
         var shelter = _mapper.Map<SaveShelterResource, Shelter>(resource);
         var result = await _shelterService.UpdateAsync(id,shelter);
+        
         if (!result.Success)
-        {
             return BadRequest(result.Message);
-        }
+        
 
         var shelterResource = _mapper.Map<Shelter, ShelterResource>(result.Resource);
         return Ok(shelterResource);
@@ -71,14 +65,13 @@ public class ShelterController : ControllerBase
     public async Task<IActionResult> DeleteAsync(int id)
     {
         var result = await _shelterService.DeleteAsync(id);
+        
         if (!result.Success)
-        {
             return BadRequest(result.Message);
-        }
-
-        var shelteResource = _mapper.Map<Shelter, ShelterResource>(result.Resource);
-
-        return Ok(shelteResource);
+        
+        var shelterResource = _mapper.Map<Shelter, ShelterResource>(result.Resource);
+        
+        return Ok(shelterResource);
     }
     
 }

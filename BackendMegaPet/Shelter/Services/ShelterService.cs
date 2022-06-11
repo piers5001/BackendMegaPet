@@ -1,26 +1,27 @@
 ﻿using BackendMegaPet.Shelter.Domain.Repositories;
 using BackendMegaPet.Shelter.Domain.Services;
 using BackendMegaPet.Shelter.Domain.Services.Communication;
-
 namespace BackendMegaPet.Shelter.Services;
+using BackendMegaPet.Shelter.Domain.Models;
+
 
 public class ShelterService : IShelterService
 {
     private readonly IShelterRepository _shelterRepository;
     private readonly IUnitOfWork _unitOfWork;
 
-    public ShelterService(IShelterRepository shelterRepository, IUnitOfWork unitOfWork)
+    public ShelterService(IUnitOfWork unitOfWork,IShelterRepository shelterRepository)
     {
-        _shelterRepository = shelterRepository;
         _unitOfWork = unitOfWork;
+        _shelterRepository = shelterRepository;
     }
 
-    public async Task<IEnumerable<Domain.Models.Shelter>> ListAsync()
+    public async Task<IEnumerable<Shelter>> ListAsync()
     {
         return await _shelterRepository.ListAsync();
     }
 
-    public async Task<ShelterResponse> SaveAsync(Domain.Models.Shelter shelter)
+    public async Task<ShelterResponse> SaveAsync(Shelter shelter)
     {
         try
         {
@@ -35,10 +36,10 @@ public class ShelterService : IShelterService
         }
     }
 
-    public async Task<ShelterResponse> UpdateAsync(int id, Domain.Models.Shelter shelter)
+    public async Task<ShelterResponse> UpdateAsync(int id, Shelter shelter)
     {
         var existingShelter = await _shelterRepository.FindShelterByIdAsync(id);
-        
+            
         if (existingShelter == null)
         {
             return new ShelterResponse("Shelter not found please re check the Shelter id");

@@ -1,10 +1,22 @@
+using BackendMegaPet.Shelter.Domain.Repositories;
+using BackendMegaPet.Shelter.Domain.Services;
+using BackendMegaPet.Shelter.Mapping;
+using BackendMegaPet.Shelter.Persistence.Respositories;
+using BackendMegaPet.Shelter.Services;
 using BackendMegaPet.User.Domain.Repositories;
 using BackendMegaPet.User.Domain.Services;
 using BackendMegaPet.User.Mapping;
 using BackendMegaPet.User.Persistence.Contexts;
+using BackendMegaPet.Shelter.Persistence.Contexts;
 using BackendMegaPet.User.Persistence.Repositories;
 using BackendMegaPet.User.Services;
 using Microsoft.EntityFrameworkCore;
+using AppDbContext = BackendMegaPet.Shelter.Persistence.Contexts.AppDbContext;
+//using IUnitOfWork = BackendMegaPet.User.Domain.Repositories.IUnitOfWork;
+//using UnitOfWork = BackendMegaPet.User.Persistence.Repositories.UnitOfWork;
+
+using IUnitOfWork = BackendMegaPet.Shelter.Domain.Repositories.IUnitOfWork;
+using UnitOfWork = BackendMegaPet.Shelter.Persistence.Respositories.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,19 +41,23 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 // Dependency Injection Configuration
 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserService, UserService>();
+//builder.Services.AddScoped<IUserRepository, UserRepository>();
+//builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
+builder.Services.AddScoped<IShelterService, ShelterService>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 // AutoMapper Configuration
 
 builder.Services.AddAutoMapper(
-    typeof(ModelToResourceProfile),
-    typeof(ResourceToModelProfile));
+    //typeof(ModelToResourceProfile),
+    //typeof(ResourceToModelProfile));
+    typeof(ModelToResourceShelterProfile),
+    typeof(ResourceToModelShelterProfile));
 
-
-var app = builder.Build();
+    var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 using (var context = scope.ServiceProvider.GetService<AppDbContext>())

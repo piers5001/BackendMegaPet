@@ -3,9 +3,7 @@ using BackendMegaPet.Shared.Extensions;
 using BackendMegaPet.User.Domain.Services;
 using BackendMegaPet.User.Resources;
 using Microsoft.AspNetCore.Mvc;
-
 namespace BackendMegaPet.User.Controller;
-
 using BackendMegaPet.User.Domain.Models;
 [Route("api/v1/[controller]")]
 public class UsersController : ControllerBase
@@ -58,7 +56,6 @@ public class UsersController : ControllerBase
             return BadRequest(result.Message);
 
         var userResource = _mapper.Map<User, UserResource>(result.Resource);
-
         return Ok(userResource);
     }
 

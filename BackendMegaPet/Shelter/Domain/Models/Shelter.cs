@@ -3,11 +3,11 @@
 public class Shelter
 {
     public int Id { get; set; }
-    public String address { get; set; }
-    public String image { get; set; }
+    public string address { get; set; }
+    public string image { get; set; }
     public int phone { get; set; }
-    public String district { get; set; }
-    public String location { get; set; }
+    public string district { get; set; }
+    public string location { get; set; }
     
     //Relations Ships
     //public IList<Pet> Pets
