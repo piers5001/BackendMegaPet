@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BackendMegaPet.Shelter.Resources;
 
 public class SaveShelterResource
 {
-    
+    [Required]
+    public int Id { get; set; }
     [Required]
     public string address { get; set; }
     [Required]

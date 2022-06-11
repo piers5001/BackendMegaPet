@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(builder);
 
-        builder.Entity<Shelter>().ToTable("shelters");
+        builder.Entity<Shelter>().ToTable("Shelters");
         builder.Entity<Shelter>().HasKey(p => p.Id);
         builder.Entity<Shelter>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
         builder.Entity<Shelter>().Property(p => p.address).IsRequired();
