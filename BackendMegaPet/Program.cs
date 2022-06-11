@@ -1,24 +1,22 @@
-
 using BackendMegaPet.Adopter.Domain.Repositories;
 using BackendMegaPet.Adopter.Domain.Services;
 using BackendMegaPet.Adopter.Persistence.Repositories;
 using BackendMegaPet.Adopter.Services;
-using BackendMegaPet.User.Domain.Services;
-using BackendMegaPet.User.Mapping;
-using BackendMegaPet.Adopter.Persistence.Contexts;
-using BackendMegaPet.User.Persistence.Repositories;
-using BackendMegaPet.User.Services;
-
 using BackendMegaPet.Shelter.Domain.Repositories;
 using BackendMegaPet.Shelter.Domain.Services;
 using BackendMegaPet.Shelter.Mapping;
-using BackendMegaPet.Shelter.Persistence.Contexts;
 using BackendMegaPet.Shelter.Persistence.Respositories;
 using BackendMegaPet.Shelter.Services;
-
+using BackendMegaPet.User.Domain.Repositories;
+using BackendMegaPet.User.Domain.Services;
+using BackendMegaPet.User.Mapping;
+using BackendMegaPet.User.Persistence.Repositories;
+using BackendMegaPet.User.Services;
 using Microsoft.EntityFrameworkCore;
-using IUnitOfWork = BackendMegaPet.User.Domain.Repositories.IUnitOfWork;
-using UnitOfWork = BackendMegaPet.User.Persistence.Repositories.UnitOfWork;
+using IUnitOfWork = BackendMegaPet.Adopter.Domain.Repositories.IUnitOfWork;
+using ModelToResourceProfile = BackendMegaPet.Adopter.Mapping.ModelToResourceProfile;
+using ResourceToModelProfile = BackendMegaPet.Adopter.Mapping.ResourceToModelProfile;
+using UnitOfWork = BackendMegaPet.Adopter.Persistence.Repositories.UnitOfWork;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,7 +30,7 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext<AppDbContext>(
+builder.Services.AddDbContext<BackendMegaPet.Adopter.Persistence.Contexts.AppDbContext>(
     options => options.UseMySQL(connectionString)
         .LogTo(Console.WriteLine, LogLevel.Information)
         .EnableSensitiveDataLogging()
@@ -44,33 +42,26 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 // Dependency Injection Configuration
 
-
-
-
 builder.Services.AddScoped<IAdopterRepository, AdopterRepository>();
 builder.Services.AddScoped<IAdopterService, AdopterService>();
 
-
-//builder.Services.AddScoped<IUserRepository, UserRepository>();
-//builder.Services.AddScoped<IUserService, UserService>();
-
-builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
-builder.Services.AddScoped<IShelterService, ShelterService>();
+//builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
+//builder.Services.AddScoped<IShelterService, ShelterService>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 // AutoMapper Configuration
 
 builder.Services.AddAutoMapper(
-    //typeof(ModelToResourceProfile),
-    //typeof(ResourceToModelProfile));
-    typeof(ModelToResourceShelterProfile),
-    typeof(ResourceToModelShelterProfile));
+    typeof(ModelToResourceProfile),
+    typeof(ResourceToModelProfile));
+    //typeof(ModelToResourceShelterProfile),
+    //typeof(ResourceToModelShelterProfile));
 
     var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
-using (var context = scope.ServiceProvider.GetService<AppDbContext>())
+using (var context = scope.ServiceProvider.GetService<BackendMegaPet.Adopter.Persistence.Contexts.AppDbContext>())
 {
     context.Database.EnsureCreated();
 }
