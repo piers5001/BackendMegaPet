@@ -1,10 +1,15 @@
-using BackendMegaPet.User.Domain.Repositories;
+using BackendMegaPet.Adopter.Domain.Repositories;
+using BackendMegaPet.Adopter.Domain.Services;
+using BackendMegaPet.Adopter.Persistence.Repositories;
+using BackendMegaPet.Adopter.Services;
 using BackendMegaPet.User.Domain.Services;
 using BackendMegaPet.User.Mapping;
-using BackendMegaPet.User.Persistence.Contexts;
+using BackendMegaPet.Adopter.Persistence.Contexts;
 using BackendMegaPet.User.Persistence.Repositories;
 using BackendMegaPet.User.Services;
 using Microsoft.EntityFrameworkCore;
+using IUnitOfWork = BackendMegaPet.User.Domain.Repositories.IUnitOfWork;
+using UnitOfWork = BackendMegaPet.User.Persistence.Repositories.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,8 +34,11 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 // Dependency Injection Configuration
 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserService, UserService>();
+
+
+builder.Services.AddScoped<IAdopterRepository, AdopterRepository>();
+builder.Services.AddScoped<IAdopterService, AdopterService>();
+
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

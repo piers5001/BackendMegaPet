@@ -17,13 +17,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Adopter\Controllers" />
-      <Folder Include="Adopter\Domain\Repositories" />
-      <Folder Include="Adopter\Domain\Services" />
-      <Folder Include="Adopter\Mapping" />
-      <Folder Include="Adopter\Persistence" />
-      <Folder Include="Adopter\Resources" />
-      <Folder Include="Adopter\Services" />
       <Folder Include="Pet\Controller" />
       <Folder Include="Pet\Domain\Models" />
       <Folder Include="Pet\Mapping" />
