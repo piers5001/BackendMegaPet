@@ -3,7 +3,6 @@ using BackendMegaPet.Shared.Extensions;
 using BackendMegaPet.Shelter.Domain.Services;
 using BackendMegaPet.Shelter.Resources;
 using Microsoft.AspNetCore.Mvc;
-
 namespace BackendMegaPet.Shelter.Controller;
 using BackendMegaPet.Shelter.Domain.Models;
 [Route("api/v1/[controller]")]

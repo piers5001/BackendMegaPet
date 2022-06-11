@@ -11,8 +11,7 @@ public class AppDbContext : DbContext
     }
     
     public DbSet<Shelter> Shelters { get; set; }
-    //public DbSet<Pet> Pets { get; set; }
-    
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
@@ -20,11 +19,11 @@ public class AppDbContext : DbContext
         builder.Entity<Shelter>().ToTable("Shelters");
         builder.Entity<Shelter>().HasKey(p => p.Id);
         builder.Entity<Shelter>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-        builder.Entity<Shelter>().Property(p => p.address).IsRequired();
-        builder.Entity<Shelter>().Property(p => p.image).IsRequired();
+        builder.Entity<Shelter>().Property(p => p.address).IsRequired().HasMaxLength(50);
+        builder.Entity<Shelter>().Property(p => p.image).IsRequired().HasMaxLength(50);
         builder.Entity<Shelter>().Property(p => p.phone).IsRequired();
-        builder.Entity<Shelter>().Property(p => p.district).IsRequired();
-        builder.Entity<Shelter>().Property(p => p.location).IsRequired();
+        builder.Entity<Shelter>().Property(p => p.district).IsRequired().HasMaxLength(50);
+        builder.Entity<Shelter>().Property(p => p.location).IsRequired().HasMaxLength(50);
         
         
         builder.UseSnakeCaseNamingConvention();
