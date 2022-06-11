@@ -4,6 +4,7 @@ namespace BackendMegaPet.User.Resources;
 
 public class SaveUserResource
 {
+    
     [Required]
     [MaxLength(10)]
     public string name { get; set; }

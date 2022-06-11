@@ -6,6 +6,9 @@ public class SaveShelterResource
 {
     [Required]
     [MaxLength(10)]
+    public int id { get; set; }
+    [Required]
+    [MaxLength(10)]
     public String address { get; set; }
     [Required]
     [MaxLength(120)]
