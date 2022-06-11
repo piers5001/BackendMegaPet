@@ -18,7 +18,8 @@
 
     <ItemGroup>
       <Folder Include="Adopter\Controllers" />
-      <Folder Include="Adopter\Domain" />
+      <Folder Include="Adopter\Domain\Repositories" />
+      <Folder Include="Adopter\Domain\Services" />
       <Folder Include="Adopter\Mapping" />
       <Folder Include="Adopter\Persistence" />
       <Folder Include="Adopter\Resources" />

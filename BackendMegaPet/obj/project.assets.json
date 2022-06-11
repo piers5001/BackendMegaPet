@@ -6135,28 +6135,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Users\\Propietario\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "projectUniqueName": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
       "projectName": "BackendMegaPet",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\obj\\",
+      "projectPath": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "packagesPath": "C:\\Users\\Propietario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Propietario\\Documents\\OSORIO\\UPC\\22-01\\Aplicaciones Web\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Propietario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
