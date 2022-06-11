@@ -28,7 +28,7 @@ public class UsersController : ControllerBase
         return resources;
     }
 
-    [HttpPost]
+    [HttpPost]  
     public async Task<IActionResult> PostAsync([FromBody] SaveUserResource resource)
     {
         if (!ModelState.IsValid)

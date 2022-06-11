@@ -33,12 +33,6 @@
       <Folder Include="Shared\Mapping" />
       <Folder Include="Shared\Persistence" />
       <Folder Include="Shared\Resources" />
-      <Folder Include="Shelter\Controller" />
-      <Folder Include="Shelter\Domain" />
-      <Folder Include="Shelter\Mapping" />
-      <Folder Include="Shelter\Persistence" />
-      <Folder Include="Shelter\Resources" />
-      <Folder Include="Shelter\Services" />
     </ItemGroup>
 
 </Project>
