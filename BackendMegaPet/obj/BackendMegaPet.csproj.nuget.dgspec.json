@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-
     "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj": {}
   },
   "projects": {
@@ -18,10 +17,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Propietario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-
           "C:\\Users\\Ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
-
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

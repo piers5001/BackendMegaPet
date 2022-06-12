@@ -18,6 +18,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Adopter\Controllers" />
+      <Folder Include="Adopter\Domain\Models" />
+      <Folder Include="Adopter\Domain\Repositories" />
+      <Folder Include="Adopter\Domain\Services\Communication" />
+      <Folder Include="Adopter\Mapping" />
+      <Folder Include="Adopter\Persistence\Contexts" />
+      <Folder Include="Adopter\Persistence\Repositories" />
+      <Folder Include="Adopter\Resources" />
+      <Folder Include="Adopter\Services" />
       <Folder Include="Pet\Controller" />
       <Folder Include="Pet\Domain\Models" />
       <Folder Include="Pet\Mapping" />
