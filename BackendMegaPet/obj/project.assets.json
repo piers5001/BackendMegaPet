@@ -6136,24 +6136,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ferna\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
       "projectName": "BackendMegaPet",
-      "projectPath": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
-      "packagesPath": "C:\\Users\\Ferna\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\BackendMegaPet.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\BackendMegaPet\\BackendMegaPet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -6229,16 +6233,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\projects\\gitRepositories\\BackendMegaPet\\BackendMegaPet\\obj\\project.nuget.cache : After parsing a value an unexpected character was encountered: :. Path 'expectedPackageFiles[30]', line 39, position 14."
-    }
-  ]
+  }
 }

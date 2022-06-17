@@ -1,4 +1,5 @@
-﻿using BackendMegaPet.Shelter.Domain.Repositories;
+﻿using BackendMegaPet.Shared.Domain.Repositories;
+using BackendMegaPet.Shelter.Domain.Repositories;
 using BackendMegaPet.Shelter.Domain.Services;
 using BackendMegaPet.Shelter.Domain.Services.Communication;
 namespace BackendMegaPet.Shelter.Services;

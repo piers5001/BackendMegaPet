@@ -1,5 +1,6 @@
-﻿using BackendMegaPet.Shelter.Persistence.Contexts;
-namespace BackendMegaPet.Shelter.Persistence.Respositories;
+﻿using BackendMegaPet.Shared.Persistence.Contexts;
+
+namespace BackendMegaPet.Shared.Persistence.Repositories;
 
 public class BaseRepository
 {

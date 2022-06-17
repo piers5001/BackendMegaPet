@@ -1,5 +1,6 @@
 ﻿using BackendMegaPet.Adopter.Domain.Repositories;
-using BackendMegaPet.Adopter.Persistence.Contexts;
+using BackendMegaPet.Shared.Persistence.Contexts;
+using BackendMegaPet.Shared.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace BackendMegaPet.Adopter.Persistence.Repositories;

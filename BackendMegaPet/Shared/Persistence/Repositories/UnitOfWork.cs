@@ -1,7 +1,7 @@
-﻿using BackendMegaPet.Adopter.Domain.Repositories;
-using BackendMegaPet.Adopter.Persistence.Contexts;
+﻿using BackendMegaPet.Shared.Domain.Repositories;
+using BackendMegaPet.Shared.Persistence.Contexts;
 
-namespace BackendMegaPet.Adopter.Persistence.Repositories;
+namespace BackendMegaPet.Shared.Persistence.Repositories;
 
 public class UnitOfWork : IUnitOfWork
 {

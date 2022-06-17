@@ -26,7 +26,6 @@
       <Folder Include="Pet\Services" />
       <Folder Include="Shared\Exceptions" />
       <Folder Include="Shared\Mapping" />
-      <Folder Include="Shared\Persistence" />
       <Folder Include="Shared\Resources" />
     </ItemGroup>
 

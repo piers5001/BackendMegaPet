@@ -13,10 +13,9 @@ using BackendMegaPet.User.Mapping;
 using BackendMegaPet.User.Persistence.Repositories;
 using BackendMegaPet.User.Services;
 using Microsoft.EntityFrameworkCore;
-using IUnitOfWork = BackendMegaPet.Adopter.Domain.Repositories.IUnitOfWork;
 using ModelToResourceProfile = BackendMegaPet.Adopter.Mapping.ModelToResourceProfile;
 using ResourceToModelProfile = BackendMegaPet.Adopter.Mapping.ResourceToModelProfile;
-using UnitOfWork = BackendMegaPet.Adopter.Persistence.Repositories.UnitOfWork;
+using UnitOfWork = BackendMegaPet.Shared.Persistence.Repositories.UnitOfWork;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,7 +29,7 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext<BackendMegaPet.Adopter.Persistence.Contexts.AppDbContext>(
+builder.Services.AddDbContext<BackendMegaPet.Shared.Persistence.Contexts.AppDbContext>(
     options => options.UseMySQL(connectionString)
         .LogTo(Console.WriteLine, LogLevel.Information)
         .EnableSensitiveDataLogging()
@@ -44,11 +43,12 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddScoped<IAdopterRepository, AdopterRepository>();
 builder.Services.AddScoped<IAdopterService, AdopterService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
+builder.Services.AddScoped<IShelterService, ShelterService>();
 
-//builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
-//builder.Services.AddScoped<IShelterService, ShelterService>();
-
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<BackendMegaPet.Shared.Domain.Repositories.IUnitOfWork, UnitOfWork>();
 
 // AutoMapper Configuration
 
@@ -61,7 +61,7 @@ builder.Services.AddAutoMapper(
     var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
-using (var context = scope.ServiceProvider.GetService<BackendMegaPet.Adopter.Persistence.Contexts.AppDbContext>())
+using (var context = scope.ServiceProvider.GetService<BackendMegaPet.Shared.Persistence.Contexts.AppDbContext>())
 {
     context.Database.EnsureCreated();
 }
