@@ -7,7 +7,7 @@ namespace BackendMegaPet.Pet.Resources;
 public class SavePetResource
 {
     [Required]
-    public int Id { get; set; }
+    public int id { get; set; }
     [Required]
     [MaxLength(50)]
     public string name { get; set; }

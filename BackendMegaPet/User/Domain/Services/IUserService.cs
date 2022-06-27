@@ -1,5 +1,4 @@
 ﻿using BackendMegaPet.User.Domain.Services.Communication;
-
 namespace BackendMegaPet.User.Domain.Services;
 using BackendMegaPet.User.Domain.Models;
 public interface IUserService
