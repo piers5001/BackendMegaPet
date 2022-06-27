@@ -18,12 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Pet\Controller" />
-      <Folder Include="Pet\Domain\Models" />
-      <Folder Include="Pet\Mapping" />
-      <Folder Include="Pet\Persistence" />
-      <Folder Include="Pet\Resources" />
-      <Folder Include="Pet\Services" />
+      <Folder Include="Pet" />
       <Folder Include="Shared\Exceptions" />
       <Folder Include="Shared\Mapping" />
       <Folder Include="Shared\Resources" />
