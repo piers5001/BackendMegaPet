@@ -52,7 +52,6 @@ C:\Users\User\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\Ba
 C:\Users\User\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\User\Documents\GitHub\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
-
 C:\Users\Propietario\Documents\OSORIO\UPC\22-01\Aplicaciones Web\BackendMegaPet\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Propietario\Documents\OSORIO\UPC\22-01\Aplicaciones Web\BackendMegaPet\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\appsettings.json
 C:\Users\Propietario\Documents\OSORIO\UPC\22-01\Aplicaciones Web\BackendMegaPet\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\BackendMegaPet.exe
@@ -107,7 +106,6 @@ C:\Users\Propietario\Documents\OSORIO\UPC\22-01\Aplicaciones Web\BackendMegaPet\
 C:\Users\Propietario\Documents\OSORIO\UPC\22-01\Aplicaciones Web\BackendMegaPet\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\ref\BackendMegaPet.dll
 C:\Users\Propietario\Documents\OSORIO\UPC\22-01\Aplicaciones Web\BackendMegaPet\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.pdb
 C:\Users\Propietario\Documents\OSORIO\UPC\22-01\Aplicaciones Web\BackendMegaPet\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.genruntimeconfig.cache
-
 D:\projects\gitRepositories\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\appsettings.Development.json
 D:\projects\gitRepositories\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\appsettings.json
 D:\projects\gitRepositories\BackendMegaPet\BackendMegaPet\bin\Debug\net6.0\BackendMegaPet.exe
@@ -162,4 +160,13 @@ D:\projects\gitRepositories\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\refin
 D:\projects\gitRepositories\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.pdb
 D:\projects\gitRepositories\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.genruntimeconfig.cache
 D:\projects\gitRepositories\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\ref\BackendMegaPet.dll
-
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.csproj.AssemblyReference.cache
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.AssemblyInfoInputs.cache
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.AssemblyInfo.cs
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.csproj.CoreCompileInputs.cache
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.MvcApplicationPartsAssemblyInfo.cs
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.MvcApplicationPartsAssemblyInfo.cache
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.dll
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\refint\BackendMegaPet.dll
+D:\Usuarios\Documents\GitHub\BackendMegaPet\BackendMegaPet\obj\Debug\net6.0\BackendMegaPet.pdb
