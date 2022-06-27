@@ -2,6 +2,10 @@ using BackendMegaPet.Adopter.Domain.Repositories;
 using BackendMegaPet.Adopter.Domain.Services;
 using BackendMegaPet.Adopter.Persistence.Repositories;
 using BackendMegaPet.Adopter.Services;
+using BackendMegaPet.Pet.Domain.Repositories;
+using BackendMegaPet.Pet.Domain.Services;
+using BackendMegaPet.pet.Persistence.Respositories;
+using BackendMegaPet.Pet.Services;
 using BackendMegaPet.Shelter.Domain.Repositories;
 using BackendMegaPet.Shelter.Domain.Services;
 using BackendMegaPet.Shelter.Mapping;
@@ -47,6 +51,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
 builder.Services.AddScoped<IShelterService, ShelterService>();
+builder.Services.AddScoped<IPetRepository, PetRepository>();
+builder.Services.AddScoped<IPetService, PetService>();
 
 builder.Services.AddScoped<BackendMegaPet.Shared.Domain.Repositories.IUnitOfWork, UnitOfWork>();
 

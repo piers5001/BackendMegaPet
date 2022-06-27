@@ -11,28 +11,28 @@ public class PetRepository : BaseRepository, IPetRepository
     {
     }
 
-    public Task<IEnumerable<Pet.Domain.Models.Pet>> ListAsync()
+    public async Task<IEnumerable<Pet.Domain.Models.Pet>> ListAsync()
     {
-        throw new NotImplementedException();
+        return await _context.Pets.ToListAsync();
     }
 
-    public Task AddAsync(Pet.Domain.Models.Pet pet)
+    public async Task AddAsync(Pet.Domain.Models.Pet pet)
     {
-        throw new NotImplementedException();
+        await _context.Pets.AddAsync(pet);
     }
 
-    public Task<Pet.Domain.Models.Pet> FindPetByIdAsync(int id)
+    public async Task<Pet.Domain.Models.Pet> FindPetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _context.Pets.FindAsync(id);
     }
 
     public void UpdatePet(Pet.Domain.Models.Pet pet)
     {
-        throw new NotImplementedException();
+        _context.Pets.Update(pet);
     }
 
     public void RemovePet(Pet.Domain.Models.Pet pet)
     {
-        throw new NotImplementedException();
+        _context.Pets.Remove(pet);
     }
 }
