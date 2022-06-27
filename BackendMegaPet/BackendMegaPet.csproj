@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Pet" />
       <Folder Include="Shared\Exceptions" />
       <Folder Include="Shared\Mapping" />
       <Folder Include="Shared\Resources" />
