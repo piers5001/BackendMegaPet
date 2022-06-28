@@ -7,13 +7,13 @@ using TechTalk.SpecFlow;
 namespace BackendMegaPetTests.Steps;
 
 [Binding]
-public sealed class PetServiceStepDefinition
+public sealed class AdopterServiceStepDefinition
 {
     // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
     private readonly ScenarioContext _scenarioContext;
 
-    public PetServiceStepDefinition(ScenarioContext scenarioContext)
+    public AdopterServiceStepDefinition(ScenarioContext scenarioContext)
     {
         _scenarioContext = scenarioContext;
     }
@@ -58,44 +58,20 @@ public sealed class PetServiceStepDefinition
         _scenarioContext.Pending();
     }
 
-    [Given(@"the Endpoint https://localhost:(.*)/swagger/index\.html is available")]
-    public void GivenTheEndpointHttpsLocalhostSwaggerIndexHtmlIsAvailable(int p0)
+    [When(@"a register Request is sent")]
+    public void WhenARegisterRequestIsSent(Table table)
     {
         ScenarioContext.StepIsPending();
     }
 
-    [When(@"a Post Request is sent")]
-    public void WhenAPostRequestIsSent(Table table)
+    [Then(@"the adopter is included in the body of the response")]
+    public void ThenTheAdopterIsIncludedInTheBodyOfTheResponse(Table table)
     {
         ScenarioContext.StepIsPending();
     }
 
-    [Then(@"A Response with Status (.*) is received")]
-    public void ThenAResponseWithStatusIsReceived(int p0)
-    {
-        ScenarioContext.StepIsPending();
-    }
-
-    [Then(@"a Tutorial Resource is included in Response Body")]
-    public void ThenATutorialResourceIsIncludedInResponseBody(Table table)
-    {
-        ScenarioContext.StepIsPending();
-    }
-
-    [Given(@"There is already a pet with the same image")]
-    public void GivenThereIsAlreadyAPetWithTheSameImage(Table table)
-    {
-        ScenarioContext.StepIsPending();
-    }
-
-    [Then(@"An Error Message with value ""(.*)"" is returned")]
-    public void ThenAnErrorMessageWithValueIsReturned(string p0)
-    {
-        ScenarioContext.StepIsPending();
-    }
-
-    [Then(@"the information of the pet is included in Response Body")]
-    public void ThenTheInformationOfThePetIsIncludedInResponseBody(Table table)
+    [Given(@"There is already an adopter with the same name")]
+    public void GivenThereIsAlreadyAnAdopterWithTheSameName(Table table)
     {
         ScenarioContext.StepIsPending();
     }

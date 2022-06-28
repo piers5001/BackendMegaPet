@@ -12,7 +12,7 @@ In order to make it available for applications.
           | name  | Description                                                           | image   |recuedTime   | category    |inventoryStatus          |rating |
           | Tyson | Tyson is a very happy dog who was rescued and is looking for a family |   URL   |  25         |    BABY     |        AVAILABLE        |   5    |
         Then A Response with Status 200 is received
-        And a Tutorial Resource is included in Response Body
+        And the information of the pet is included in Response Body
           | name  | Description                                                           | image |recuedTime |category |inventoryStatus   |rating |
           | Tyson | Tyson is a very happy dog who was rescued and is looking for a family |   URL |  25       |    BABY |        AVAILABLE |   5   |
 
